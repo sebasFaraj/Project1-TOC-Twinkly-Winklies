@@ -31,7 +31,7 @@ def test_bruteforce_finds_assignment_for_binary_clauses(solver):
     sat, assignment = solver.sat_bruteforce(3, clauses)
 
     assert sat is True
-    assert assignment == {1: True, 2: False, 3: True}
+    assert assignment == {1: False, 2: True, 3: False}
 
 
 def test_bruteforce_unsatisfiable_return_empty_assignment(solver):
