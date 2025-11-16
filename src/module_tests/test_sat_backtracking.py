@@ -13,8 +13,7 @@ from src.sat import SatSolver
 @pytest.fixture
 def solver():
     """
-    SatSolver performs file parsing in __init__, so we bypass it here since the
-    sat_backtracking logic does not depend on any instance attributes.
+    SatSolver performs file parsing in __init__, so we bypass it here
     """
     return SatSolver.__new__(SatSolver)
 

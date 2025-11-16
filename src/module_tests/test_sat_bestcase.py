@@ -13,8 +13,7 @@ from src.sat import SatSolver
 @pytest.fixture
 def solver():
     """
-    Instantiate SatSolver without triggering the heavy __init__ logic while
-    still allowing us to call the instance methods directly.
+    SatSolver performs file parsing in __init__, so we bypass it here
     """
     return SatSolver.__new__(SatSolver)
 
