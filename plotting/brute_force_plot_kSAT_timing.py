@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
-csv_path = "results/brute_force_case_kSAT_sat_solver_results.csv" #change depending del result name
+csv_path = "results/brute_force_kSAT_sat_solver_results.csv" #change depending del result name
 
 x_sat = []
 y_sat = []
